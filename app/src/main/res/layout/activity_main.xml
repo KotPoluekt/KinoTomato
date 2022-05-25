@@ -15,6 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -24,18 +25,21 @@
                 android:adjustViewBounds="true"
                 android:src="@drawable/film_1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/film_name_1" />
 
             <TextView
                 android:id="@+id/text_view_1"
-                android:layout_height="wrap_content"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:lines="3"
                 android:text="@string/film_name_1"
                 android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/title_default"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image_view_1"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/text_year_1"
@@ -49,9 +53,10 @@
 
             <Button
                 android:id="@+id/btn_details_1"
+                android:tag="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Детали"
+                android:text="@string/btnDetails"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -60,6 +65,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -69,7 +75,8 @@
                 android:adjustViewBounds="true"
                 android:src="@drawable/film_2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/film_name_2" />
 
             <TextView
                 android:id="@+id/text_view_2"
@@ -78,6 +85,8 @@
                 android:lines="3"
                 android:text="@string/film_name_2"
                 android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/title_default"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image_view_2"
                 app:layout_constraintTop_toTopOf="parent"/>
@@ -94,9 +103,10 @@
 
             <Button
                 android:id="@+id/btn_details_2"
+                android:tag="2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Детали"
+                android:text="@string/btnDetails"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -105,6 +115,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -114,7 +125,8 @@
                 android:adjustViewBounds="true"
                 android:src="@drawable/film_3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/film_name_3" />
 
             <TextView
                 android:id="@+id/text_view_3"
@@ -123,6 +135,8 @@
                 android:lines="3"
                 android:text="@string/film_name_3"
                 android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/title_default"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image_view_3"
                 app:layout_constraintTop_toTopOf="parent"/>
@@ -139,9 +153,10 @@
 
             <Button
                 android:id="@+id/btn_details_3"
+                android:tag="3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Детали"
+                android:text="@string/btnDetails"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
